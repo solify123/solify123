@@ -12,91 +12,13 @@
    
    <!-- Subtitle with Minimalist Style -->
    <div align="center" style="margin-top: 20px; position: relative; z-index: 2;">
-      <span id="subtitle" style="background: linear-gradient(135deg,rgb(0, 0, 0),rgb(25, 197, 209)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-size: 16px; font-weight: 400; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; opacity: 0.9; transition: all 0.3s ease; display: inline-block; padding: 10px; border-radius: 8px;">
+      <span id="subtitle" style="background: linear-gradient(135deg,rgb(0, 0, 0),rgb(25, 197, 209)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-size: 25px; font-weight: 400; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; opacity: 0.9; transition: all 0.3s ease; display: inline-block; padding: 10px; border-radius: 8px;">
          ✨ To plan goals with thinking to live whole life, to live with thinking today is the last day of my life! ✨
       </span>
    </div>
-   
-   <!-- Minimalist Decorative Elements -->
-
-   <div style="display: flex; justify-content: center; margin-top: 25px; gap: 15px; position: relative; z-index: 2;">
-      <span class="emoji" style="font-size: 18px; opacity: 0.7; transition: all 0.3s ease; cursor: pointer; display: inline-block; padding: 5px; border-radius: 50%;" 
-            onmouseover="this.style.opacity='1'; this.style.transform='translateY(-5px) scale(1.2) rotate(10deg)'; this.style.background='rgba(255,255,255,0.2)'" 
-            onmouseout="this.style.opacity='0.7'; this.style.transform='translateY(0) scale(1) rotate(0deg)'; this.style.background='transparent'">🌟</span>
-      <span class="emoji" style="font-size: 18px; opacity: 0.7; transition: all 0.3s ease; cursor: pointer; display: inline-block; padding: 5px; border-radius: 50%;" 
-            onmouseover="this.style.opacity='1'; this.style.transform='translateY(-5px) scale(1.2) rotate(-10deg)'; this.style.background='rgba(255,255,255,0.2)'" 
-            onmouseout="this.style.opacity='0.7'; this.style.transform='translateY(0) scale(1) rotate(0deg)'; this.style.background='transparent'">💫</span>
-      <span class="emoji" style="font-size: 18px; opacity: 0.7; transition: all 0.3s ease; cursor: pointer; display: inline-block; padding: 5px; border-radius: 50%;" 
-            onmouseover="this.style.opacity='1'; this.style.transform='translateY(-5px) scale(1.2) rotate(10deg)'; this.style.background='rgba(255,255,255,0.2)'" 
-            onmouseout="this.style.opacity='0.7'; this.style.transform='translateY(0) scale(1) rotate(0deg)'; this.style.background='transparent'">⭐</span>
-      <span class="emoji" style="font-size: 18px; opacity: 0.7; transition: all 0.3s ease; cursor: pointer; display: inline-block; padding: 5px; border-radius: 50%;" 
-            onmouseover="this.style.opacity='1'; this.style.transform='translateY(-5px) scale(1.2) rotate(-10deg)'; this.style.background='rgba(255,255,255,0.2)'" 
-            onmouseout="this.style.opacity='0.7'; this.style.transform='translateY(0) scale(1) rotate(0deg)'; this.style.background='transparent'">🔥</span>
-      <span class="emoji" style="font-size: 18px; opacity: 0.7; transition: all 0.3s ease; cursor: pointer; display: inline-block; padding: 5px; border-radius: 50%;" 
-            onmouseover="this.style.opacity='1'; this.style.transform='translateY(-5px) scale(1.2) rotate(10deg)'; this.style.background='rgba(255,255,255,0.2)'" 
-            onmouseout="this.style.opacity='0.7'; this.style.transform='translateY(0) scale(1) rotate(0deg)'; this.style.background='transparent'">💎</span>
-   </div>
-   
 </div>
 
-<script>
-// CSS Animation for gradient shift
-const style = document.createElement('style');
-style.textContent = `
-@keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-`;
-document.head.appendChild(style);
-
-// Mouse move effect
-document.getElementById('mainContainer').addEventListener('mousemove', function(e) {
-    const rect = this.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    
-    const mouseEffect = document.getElementById('mouseEffect');
-    mouseEffect.style.left = (x - 100) + 'px';
-    mouseEffect.style.top = (y - 100) + 'px';
-    mouseEffect.style.opacity = '1';
-});
-
-document.getElementById('mainContainer').addEventListener('mouseleave', function() {
-    document.getElementById('mouseEffect').style.opacity = '0';
-});
-
-// Enhanced subtitle hover effect
-document.getElementById('subtitle').addEventListener('mouseenter', function() {
-    this.style.transform = 'scale(1.02)';
-    this.style.background = 'linear-gradient(135deg, rgba(127, 140, 141, 0.1), rgba(149, 165, 166, 0.1))';
-    this.style.padding = '12px';
-    this.style.boxShadow = '0 4px 15px rgba(0,0,0,0.1)';
-});
-
-document.getElementById('subtitle').addEventListener('mouseleave', function() {
-    this.style.transform = 'scale(1)';
-    this.style.background = 'linear-gradient(135deg, #7f8c8d, #95a5a6)';
-    this.style.padding = '10px';
-    this.style.boxShadow = 'none';
-});
-
-// Add click effect to emojis
-document.querySelectorAll('.emoji').forEach(emoji => {
-    emoji.addEventListener('click', function() {
-        this.style.transform = 'scale(0.8) rotate(180deg)';
-        setTimeout(() => {
-            this.style.transform = 'scale(1.2) rotate(0deg)';
-            setTimeout(() => {
-                this.style.transform = 'scale(1) rotate(0deg)';
-            }, 150);
-        }, 150);
-    });
-});
-</script>
 <br>
-
 
 <h1 style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center; padding: 20px; border-radius: 15px; box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4); text-shadow: 2px 2px 4px rgba(0,0,0,0.3); font-size: 2.5em; margin: 30px 0; border: 3px solid rgba(255,255,255,0.2);">🚀 Technology 🚀</h1>
 
