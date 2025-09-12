@@ -22,7 +22,7 @@
 
 ### 🌐 Connect with me:
 
-- [![Telegram](https://img.shields.io/badge/Telegram-0088cc?style=flat&logo=telegram&logoColor=white)](https://t.me/I_like_everything_in_the_world) - @I_like_everything_in_the_world
+- [![Telegram](https://img.shields.io/badge/Telegram-0088cc?style=flat&logo=telegram&logoColor=white)](https://t.me/solify_star) - @solify_star
 - [![Discord](https://img.shields.io/badge/Discord-7289DA?style=flat&logo=discord&logoColor=white)](https://discord.gg/lfley) -  lfley
 
 <!-- - [![Skype](https://img.shields.io/badge/Skype-00AFF0?style=flat&logo=skype&logoColor=white)](skype:live:.cid.16dac497b946b44b?chat) - live:.cid.16dac497b946b44b -->
